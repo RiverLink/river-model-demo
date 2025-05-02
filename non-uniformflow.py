@@ -3,7 +3,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_river(xs, zs, Hs):
+def plot_river(sz, xs, zs, Hs):
 
     # 結果のプロット
     plt.plot(xs, zs, label="$z_b$")        # 河床高のプロット
@@ -17,7 +17,7 @@ def plot_river(xs, zs, Hs):
     # 計算結果の表形式出力
     print("|$x$<br>[m]|$z$<br>[m]|$H$<br>[m]|")
     print("|---|---|---|")
-    for i in range(len(xs)):
+    for i in range(sz):
         print(f"|{xs[i]:.0f}|{zs[i]:.1f}|{Hs[i]:.3f}|")
 
 
@@ -54,7 +54,7 @@ def main(n, So, B, Q, h, z, dx, L):
         cnst = H + vv_2g + Sfdx_2          # 次の計算点のための定数更新
 
     # 計算結果のプロット    
-    plot_river(xs, zs, Hs)
+    plot_river(sz, xs, zs, Hs)
 
 
 if __name__ == "__main__":
