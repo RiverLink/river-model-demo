@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 # 計算条件の設定
 n = 0.02      # Manning の粗度係数
-So = 1 / 1000 # 河床勾配
-B = 200       # 川幅 [m]
+So = 1 / 300 # 河床勾配
+B = 500       # 川幅 [m]
 Q = 2000      # 流量 [cu.m/s]
 h = 5         # 下流端の水深 [m]
 z = 0         # 下流端の河床高 [m]
