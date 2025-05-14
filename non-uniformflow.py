@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 n = 0.02      # Manning の粗度係数
 So = 1 / 3000 # 河床勾配
 B = 1200       # 川幅 [m]
-Q = 5000      # 流量 [cu.m/s]
+Q = 10000      # 流量 [cu.m/s]
 h = 5         # 下流端の水深 [m]
 z = 0         # 下流端の河床高 [m]
 dx = 500      # 計算距離刻み [m]
